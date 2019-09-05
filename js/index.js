@@ -52,6 +52,37 @@ nav[3].textContent = 'Features';
 nav[4].textContent = 'About';
 nav[5].textContent = 'Contact';
 
+  // Nav color change
+      // const navColor = document.querySelectorAll('nav a');
+      // navColor[0].style.color = 'green';
+      // navColor[1].style.color = 'green';
+      // navColor[2].style.color = 'green';
+      // navColor[3].style.color = 'green';
+      // navColor[4].style.color = 'green';
+      // navColor[5].style.color = 'green';
+// function changeColor(className, newColor) {
+//   var elems = document.querySelectorAll(className);
+//   var index = 0, length = elems.length;
+//   for ( ; index < length; index++) {
+//       elems[index].style.color = newColor;
+//   }
+// }
+// changeColor('nav a', 'green');
+
+//append new nav item
+const newNavApp = document.createElement('a');
+newNavApp.href = '#';
+newNavApp.textContent = '¡Adjuntar!';
+const newNavItemEnd = document.querySelector('nav');
+newNavItemEnd.appendChild(newNavApp);
+
+//prepend new nav item
+const newNavPre = document.createElement('a');
+newNavPre.href = '#';
+newNavPre.textContent = '¡Anteponer!';
+const newNavItemStart = document.querySelector('nav');
+newNavItemStart.prepend(newNavPre);
+
 
 // CTA //
 
