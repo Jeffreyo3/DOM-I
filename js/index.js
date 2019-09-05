@@ -60,14 +60,13 @@ nav[5].textContent = 'Contact';
       // navColor[3].style.color = 'green';
       // navColor[4].style.color = 'green';
       // navColor[5].style.color = 'green';
-// function changeColor(className, newColor) {
-//   var elems = document.querySelectorAll(className);
-//   var index = 0, length = elems.length;
-//   for ( ; index < length; index++) {
-//       elems[index].style.color = newColor;
-//   }
-// }
-// changeColor('nav a', 'green');
+function changeColor(className, newColor) {
+  var elems = document.querySelectorAll(className);
+  var index = 0, length = elems.length;
+  for ( ; index < length; index++) {
+      elems[index].style.color = newColor;
+  }
+};
 
 //append new nav item
 const newNavApp = document.createElement('a');
@@ -83,6 +82,8 @@ newNavPre.textContent = '¡Anteponer!';
 const newNavItemStart = document.querySelector('nav');
 newNavItemStart.prepend(newNavPre);
 
+  // Call function after appendChild & prepend to change color of all nav items
+changeColor('nav a', 'green');
 
 // CTA //
 
