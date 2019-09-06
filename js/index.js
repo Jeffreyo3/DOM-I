@@ -61,8 +61,8 @@ nav[5].textContent = 'Contact';
       // navColor[4].style.color = 'green';
       // navColor[5].style.color = 'green';
 function changeColor(className, newColor) {
-  var elems = document.querySelectorAll(className);
-  var index = 0, length = elems.length;
+  let elems = document.querySelectorAll(className);
+  let index = 0, length = elems.length;
   for ( ; index < length; index++) {
       elems[index].style.color = newColor;
   }
