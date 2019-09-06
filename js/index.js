@@ -111,8 +111,9 @@ mainTextH[1].textContent = siteContent['main-content']['about-h4'];
 mainTextP[1].textContent = siteContent['main-content']['about-content'];
 
 // Middle Content
-const middleImg = document.querySelector('#middle-img');
-middleImg.src = 'img/mid-page-accent.jpg';
+
+const middleImg = document.getElementById('middle-img');
+middleImg.setAttribute('src', siteContent['main-content']['middle-img-src'])
 
 // Bottom Content
 mainTextH[2].textContent = siteContent['main-content']['services-h4'];
